@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exhibit-nubuck | ヌバックレザー展示ページ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'ヒラギノ角ゴ Pro', 'メイリオ';
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 30px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        
+        header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            background: #f0f0f0;
+        }
+        
+        main {
+            padding: 40px 30px;
+        }
+        
+        section {
+            margin-bottom: 50px;
+        }
+        
+        section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0 0 0 30px;
+        }
+        
+        li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.8;
+        }
+        
+        li:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .en-section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .en-section h2 {
+            color: #764ba2;
+            border-bottom-color: #764ba2;
+        }
+        
+        .footer-note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 8px;
+            font-size: 0.95em;
+        }
+        
+        .footer-note p {
+            margin-bottom: 15px;
+        }
+        
+        a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+        
+        footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #667eea, transparent);
+            margin: 40px 0;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            main {
+                padding: 20px 15px;
+            }
+            
+            section h2 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>exhibit-nubuck</h1>
+            <p>ヌバックレザーの解説ページ</p>
+        </header>
+        
+        <img src="images/nubuck-hero.jpg" alt="ヌバックレザー" class="hero-image">
+        
+        <main>
+            <!-- 日本語セクション -->
+            <section>
+                <h2> ヌバックとは</h2>
+                <ul>
+                    <li>ヌバックは、牛革の表面を細かく削って微起毛にした、マットで上品な質感の革です。</li>
+                    <li>スエード（裏面起毛）よりキメが細く、やや丈夫。詳しくは下の「特徴お手入れ」へ。</li>
+                    <li>ヌバックは、牛革の表面を細かいサンドペーパーで丁寧に削って仕上げた、やわらかく上品な質感の革です。</li>
+                    <li>表面が短く起毛しており、しっとりとした手触りとマットな風合いが特徴です。</li>
+                    <li>名称の由来：雄鹿革を同様に仕上げた「バックスキン」に似ていることに由来するといわれています。</li>
+                </ul>
+            </section>
+            
+            <hr>
+            
+            <section>
+                <h2> 特徴</h2>
+                <ul>
+                    <li>軽くて柔らかく、手になじむ感触</li>
+                    <li>使い込むほどに風合いが増すエイジング</li>
+                    <li>高級感があり、靴バッグ小物などに広く使用</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2> 用途</h2>
+                <ul>
+                    <li>バッグや小物（財布、キーケース）</li>
+                    <li>靴（レザーシューズ、ワークブーツ、登山靴）</li>
+                    <li>アクセサリー（時計ベルト、手袋）</li>
+                    <li>アパレル（ジャケット）</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2> お手入れ</h2>
+                <ul>
+                    <li>ヌバックは水や汚れに弱いため、防水スプレーの使用がおすすめです。</li>
+                    <li>ブラシで優しくほこりを落とすだけでも、美しい質感が長持ちします。</li>
+                </ul>
+            </section>
+            
+            <section>
+                <h2> ワンポイント</h2>
+                <ul>
+                    <li>ヌバックは「スエード」と似ていますが、スエードが裏面から起毛しているのに対し、ヌバックは表面を起毛させています。</li>
+                </ul>
+            </section>
+            
+            <hr>
+            
+            <!-- 英語セクション -->
+            <div class="en-section">
+                <section>
+                    <h2> Overview</h2>
+                    <ul>
+                        <li>Nubuck is a type of leather made by finely sanding the grain side of cowhide to raise a delicate nap, giving it a matte, refined look.</li>
+                        <li>Compared with suede (nap raised from the flesh side), it has a finer texture and is slightly more durable. See "Features" and "Care" below for details.</li>
+                        <li>It is carefully finished with fine sandpaper for a soft, elegant hand feel.</li>
+                        <li>The surface has a short nap, offering a smooth, slightly velvety touch and a matte appearance.</li>
+                        <li>Etymology: The name is said to derive from its resemblance to deer "buckskin" finished in a similar way.</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2> Features</h2>
+                    <ul>
+                        <li>Lightweight and supple with a comfortable feel</li>
+                        <li>Ages beautifully over time, developing a rich patina</li>
+                        <li>Often used in premium shoes, bags, and accessories</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2> Uses</h2>
+                    <ul>
+                        <li>Bags and small leather goods (wallets, key cases)</li>
+                        <li>Shoes and boots (including work and hiking boots)</li>
+                        <li>Accessories (watch straps, gloves)</li>
+                        <li>Apparel (jackets)</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2> Care</h2>
+                    <ul>
+                        <li>Nubuck is sensitive to water and stains, so apply a waterproof spray before use.</li>
+                        <li>Gently brushing off dust will help maintain its texture and appearance.</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2> Tips</h2>
+                    <ul>
+                        <li>Although similar to suede, nubuck is sanded on the grain side (outside), while suede is made from the flesh side (inside).</li>
+                    </ul>
+                </section>
+            </div>
+            
+            <div class="footer-note">
+                <p><strong> 注記：</strong>このページは展示品の解説ページです。以下は会社の公式サイトへのリンクです。</p>
+                <p><strong>企業サイト：</strong><a href="https://midori-alg.com/" target="_blank">ミドリオートレザー株式会社</a></p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 exhibit-nubuck. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
