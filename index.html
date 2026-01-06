@@ -10,7 +10,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'ヒラギノ角ゴ Pro', 'メイリオ';
             line-height: 1.8;
@@ -19,7 +19,7 @@
             padding: 20px;
             min-height: 100vh;
         }
-        
+
         .container {
             max-width: 900px;
             margin: 0 auto;
@@ -28,41 +28,50 @@
             box-shadow: 0 10px 40px rgba(0,0,0,0.1);
             overflow: hidden;
         }
-        
-        header {
-            background: white;
-            color: #333;
-            padding: 20px 30px;
-            text-align: center;
-            border-bottom: 1px solid #eee;
+
+        .hero-wrapper {
+            position: relative;
+            width: 100%;
         }
-        
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            letter-spacing: 2px;
-        }
-        
-        header p {
-            font-size: 1.1em;
-            opacity: 0.95;
-        }
-        
+
         .hero-image {
             width: 100%;
             height: auto;
             display: block;
             background: #f0f0f0;
         }
-        
+
+        .hero-title {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            text-align: right;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            z-index: 10;
+        }
+
+        .hero-title h1 {
+            font-size: 2.5em;
+            margin: 0;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        .hero-title p {
+            font-size: 1.1em;
+            margin: 5px 0 0 0;
+            opacity: 0.95;
+        }
+
         main {
             padding: 40px 30px;
         }
-        
+
         section {
             margin-bottom: 50px;
         }
-        
+
         section h2 {
             color: #667eea;
             font-size: 1.8em;
@@ -73,19 +82,19 @@
             align-items: center;
             gap: 10px;
         }
-        
+
         ul {
             list-style: none;
             padding: 0 0 0 30px;
         }
-        
+
         li {
             margin-bottom: 15px;
             padding-left: 20px;
             position: relative;
             line-height: 1.8;
         }
-        
+
         li:before {
             content: "";
             position: absolute;
@@ -94,7 +103,7 @@
             font-weight: bold;
             font-size: 1.2em;
         }
-        
+
         .en-section {
             background: #f8f9fa;
             padding: 30px;
@@ -102,12 +111,12 @@
             margin-top: 40px;
             border-left: 4px solid #667eea;
         }
-        
+
         .en-section h2 {
             color: #764ba2;
             border-bottom-color: #764ba2;
         }
-        
+
         .footer-note {
             background: #fff3cd;
             border-left: 4px solid #ffc107;
@@ -116,23 +125,23 @@
             border-radius: 8px;
             font-size: 0.95em;
         }
-        
+
         .footer-note p {
             margin-bottom: 15px;
         }
-        
+
         a {
             color: #667eea;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
         }
-        
+
         a:hover {
             color: #764ba2;
             text-decoration: underline;
         }
-        
+
         footer {
             background: #f8f9fa;
             padding: 30px;
@@ -140,23 +149,28 @@
             color: #666;
             font-size: 0.9em;
         }
-        
+
         hr {
             border: none;
             height: 2px;
             background: linear-gradient(to right, transparent, #667eea, transparent);
             margin: 40px 0;
         }
-        
+
         @media (max-width: 768px) {
-            header h1 {
+            .hero-title h1 {
                 font-size: 1.8em;
             }
-            
+
+            .hero-title {
+                bottom: 15px;
+                right: 15px;
+            }
+
             main {
                 padding: 20px 15px;
             }
-            
+
             section h2 {
                 font-size: 1.3em;
             }
@@ -165,13 +179,14 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>exhibit-nubuck</h1>
-            <p>ヌバックレザーの解説ページ</p>
-        </header>
-        
-        <img src="images/nubuck-hero.jpg" alt="ヌバックレザー" class="hero-image">
-        
+        <div class="hero-wrapper">
+            <img src="images/nubuck-hero.jpg" alt="ヌバックレザー" class="hero-image">
+            <div class="hero-title">
+                <h1>exhibit-nubuck</h1>
+                <p>ヌバックレザーの解説ページ</p>
+            </div>
+        </div>
+
         <main>
             <!-- 日本語セクション -->
             <section>
@@ -184,9 +199,9 @@
                     <li>名称の由来：雄鹿革を同様に仕上げた「バックスキン」に似ていることに由来するといわれています。</li>
                 </ul>
             </section>
-            
+
             <hr>
-            
+
             <section>
                 <h2> 特徴</h2>
                 <ul>
@@ -195,7 +210,7 @@
                     <li>高級感があり、靴バッグ小物などに広く使用</li>
                 </ul>
             </section>
-            
+
             <section>
                 <h2> 用途</h2>
                 <ul>
@@ -205,7 +220,7 @@
                     <li>アパレル（ジャケット）</li>
                 </ul>
             </section>
-            
+
             <section>
                 <h2> お手入れ</h2>
                 <ul>
@@ -213,16 +228,16 @@
                     <li>ブラシで優しくほこりを落とすだけでも、美しい質感が長持ちします。</li>
                 </ul>
             </section>
-            
+
             <section>
                 <h2> ワンポイント</h2>
                 <ul>
                     <li>ヌバックは「スエード」と似ていますが、スエードが裏面から起毛しているのに対し、ヌバックは表面を起毛させています。</li>
                 </ul>
             </section>
-            
+
             <hr>
-            
+
             <!-- 英語セクション -->
             <div class="en-section">
                 <section>
@@ -235,7 +250,7 @@
                         <li>Etymology: The name is said to derive from its resemblance to deer "buckskin" finished in a similar way.</li>
                     </ul>
                 </section>
-                
+
                 <section>
                     <h2> Features</h2>
                     <ul>
@@ -244,7 +259,7 @@
                         <li>Often used in premium shoes, bags, and accessories</li>
                     </ul>
                 </section>
-                
+
                 <section>
                     <h2> Uses</h2>
                     <ul>
@@ -254,7 +269,7 @@
                         <li>Apparel (jackets)</li>
                     </ul>
                 </section>
-                
+
                 <section>
                     <h2> Care</h2>
                     <ul>
@@ -262,7 +277,7 @@
                         <li>Gently brushing off dust will help maintain its texture and appearance.</li>
                     </ul>
                 </section>
-                
+
                 <section>
                     <h2> Tips</h2>
                     <ul>
@@ -270,17 +285,16 @@
                     </ul>
                 </section>
             </div>
-            
+
             <div class="footer-note">
                 <p><strong> 注記：</strong>このページは展示品の解説ページです。以下は会社の公式サイトへのリンクです。</p>
                 <p><strong>企業サイト：</strong><a href="https://midori-alg.com/" target="_blank">ミドリオートレザー株式会社</a></p>
             </div>
         </main>
-        
+
         <footer>
             <p>&copy; 2025 exhibit-nubuck. All rights reserved.</p>
         </footer>
     </div>
 </body>
 </html>
-
